@@ -25,7 +25,7 @@ export PATH="~/.espressif/tools/xtensa-esp32-elf-clang/esp-14.0.0-20220415-aarch
 export LIBCLANG_PATH="~/.espressif/tools/xtensa-esp32-elf-clang/esp-14.0.0-20220415-aarch64-apple-darwin/lib/"
 export PIP_USER="no"
 
-source "$HOME/.rye/env"
+[[ ! -f "$HOME/.rye/env" ]] || source "$HOME/.rye/env"
 
 # 1password
 eval "$(op completion zsh)"; compdef _op op
