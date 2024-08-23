@@ -32,5 +32,5 @@ eval "$(op completion zsh)"; compdef _op op
 
 # cargo
 export PATH=~/opt/bin:~/.cargo/bin:$PATH
-alias ls=~/.cargo/bin/exa
+alias ls=~/.cargo/bin/eza
 alias du=~/.cargo/bin/dust
