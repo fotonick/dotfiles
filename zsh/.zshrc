@@ -26,10 +26,7 @@ export LIBCLANG_PATH="~/.espressif/tools/xtensa-esp32-elf-clang/esp-14.0.0-20220
 export PIP_USER="no"
 
 [[ ! -f "$HOME/.rye/env" ]] || source "$HOME/.rye/env"
-
-# 1password
-eval "$(op completion zsh)"; compdef _op op
-
+[[ ! -f "/opt/homebrew/bin/op" ]] || eval "$(op completion zsh)"; compdef _op op
 [[ ! -f "${HOME}/neovim/bin/nvim" ]] || export PATH="${HOME}/neovim/bin:${PATH}"
 
 
