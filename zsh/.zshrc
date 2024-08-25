@@ -34,3 +34,4 @@ eval "$(op completion zsh)"; compdef _op op
 export PATH=~/opt/bin:~/.cargo/bin:$PATH
 alias ls=~/.cargo/bin/eza
 alias du=~/.cargo/bin/dust
+[[ ! -f "/usr/bin/fdfind" ]] || alias fd=/usr/bin/fdfind
