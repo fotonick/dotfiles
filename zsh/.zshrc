@@ -30,6 +30,9 @@ export PIP_USER="no"
 # 1password
 eval "$(op completion zsh)"; compdef _op op
 
+[[ ! -f "${HOME}/neovim/bin/nvim" ]] || export PATH="${HOME}/neovim/bin:${PATH}"
+
+
 # cargo
 export PATH=~/opt/bin:~/.cargo/bin:$PATH
 alias ls=~/.cargo/bin/eza
